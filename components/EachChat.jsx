@@ -1,28 +1,62 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
 
-const EachChat = ({ navigation, profilePic, name, mobileNo, lastMsgTime, lastMsgs, }) => {
+const EachChat = ({
+    navigation,
+    profilePic,
+    name,
+    mobileNo,
+    lastMsgTime,
+    lastMsgs,
+    newMsg,
+}) => {
     return (
-        <TouchableOpacity onPress={() => { navigation.navigate("ChatScreen") }} style={styles.container}>
+        <TouchableOpacity
+            onPress={() => {
+                navigation.navigate("ChatScreen");
+            }}
+            style={styles.container}
+        >
             <View style={styles.dpContainer}>
-                {profilePic === null ? <Image style={{ height: "100%", width: "100%", resizeMode: "cover" }} source={require("../images/Vector.png")} /> : <Image style={{ height: "100%", width: "100%", resizeMode: "cover" }} source={{ uri: profilePic }} />}
+                {profilePic === null ? (
+                    <Image
+                        style={{ height: "100%", width: "100%", resizeMode: "cover" }}
+                        source={require("../images/Vector.png")}
+                    />
+                ) : (
+                    <Image
+                        style={{ height: "100%", width: "100%", resizeMode: "cover" }}
+                        source={{ uri: profilePic }}
+                    />
+                )}
             </View>
             <View style={styles.rightContainer}>
                 <View style={styles.leftHolder}>
-                    {
-                        name === null ? <Text style={styles.name}>{mobileNo}</Text> : <Text style={styles.name}>{name}</Text>
-                    }
+                    {name === null ? (
+                        <Text style={styles.name}>{mobileNo}</Text>
+                    ) : (
+                        <Text style={styles.name}>{name}</Text>
+                    )}
 
                     <Text style={styles.lastMsg}>{lastMsgs}</Text>
                 </View>
-                <Text style={styles.lastMsgTime}>{lastMsgTime}</Text>
+                <View style={styles.leftHolder}>
+                    <Text style={styles.lastMsgTime}>{lastMsgTime}</Text>
+
+                    {newMsg != 0 ? (
+                        <View style={styles.unReadMsg}>
+                            <Text style={styles.unReadMsgBadgeText}>{newMsg}</Text>
+                        </View>
+                    ) : (
+                        <View></View>
+                    )}
+                </View>
             </View>
         </TouchableOpacity>
+    );
+};
 
-    )
-}
-
-export default EachChat
+export default EachChat;
 
 const styles = StyleSheet.create({
     container: {
@@ -31,8 +65,8 @@ const styles = StyleSheet.create({
         marginBottom: "8%",
     },
     dpContainer: {
-        height: 70,
-        width: 70,
+        height: 55,
+        width: 55,
         borderRadius: 45,
         overflow: "hidden",
         marginRight: "4%",
@@ -41,9 +75,9 @@ const styles = StyleSheet.create({
     rightContainer: {
         // borderWidth: 2,
         // borderColor: "white",
-        width: "75%",
+        width: "80%",
         flexDirection: "row",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
     },
     leftHolder: {
         // borderWidth: 2,
@@ -58,9 +92,24 @@ const styles = StyleSheet.create({
     lastMsg: {
         color: "#a2a2a3",
         position: "absolute",
-        bottom: 10
+        bottom: 0,
+    },
+    unReadMsg: {
+        color: "#a2a2a3",
+        position: "absolute",
+        bottom: 10,
+        backgroundColor: "#248470",
+        justifyContent: "center",
+        alignItems: "center",
+        width: 20,
+        height: 20,
+        borderRadius: 20,
+    },
+    unReadMsgBadgeText: {
+        // color: "white"
+        textAlign: "center",
     },
     lastMsgTime: {
-        color: "#a2a2a3"
-    }
-})
+        color: "#a2a2a3",
+    },
+});

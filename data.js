@@ -7,6 +7,7 @@ const chatsData = [
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 1,
   },
   {
     id: "b",
@@ -15,6 +16,7 @@ const chatsData = [
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 1,
   },
   {
     id: "c",
@@ -24,6 +26,7 @@ const chatsData = [
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 2,
   },
   {
     id: "d",
@@ -32,6 +35,7 @@ const chatsData = [
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 0,
   },
   {
     id: "e",
@@ -41,6 +45,7 @@ const chatsData = [
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 1,
   },
   {
     id: "f",
@@ -49,6 +54,7 @@ const chatsData = [
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 0,
   },
   {
     id: "g",
@@ -58,6 +64,7 @@ const chatsData = [
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 0,
   },
   {
     id: "h",
@@ -66,6 +73,7 @@ const chatsData = [
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 2,
   },
   {
     id: "i",
@@ -75,6 +83,7 @@ const chatsData = [
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 0,
   },
   {
     id: "j",
@@ -83,6 +92,7 @@ const chatsData = [
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 0,
   },
   {
     id: "k",
@@ -92,6 +102,7 @@ const chatsData = [
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
+    newMsg: 0,
   },
 ];
 

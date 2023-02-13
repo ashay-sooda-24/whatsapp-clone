@@ -1,7 +1,12 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons'
+import { useState } from 'react'
+import { Modal } from 'react-native'
 
 const Header = ({ navigation }) => {
+
+    const [showDropdown, setShowDropdown] = useState(false)
+
     return (
         <View style={styles.container}>
             <View style={styles.logoContainer} >
@@ -14,10 +19,11 @@ const Header = ({ navigation }) => {
                 <TouchableOpacity >
                     <Ionicons name='search-outline' color="#85959F" size={25} />
                 </TouchableOpacity>
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => setShowDropdown(true)}>
                     <Ionicons name='ellipsis-vertical' color="#85959F" size={25} />
                 </TouchableOpacity>
             </View>
+
         </View>
     )
 }
@@ -55,5 +61,5 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-evenly"
-    }
+    },
 })

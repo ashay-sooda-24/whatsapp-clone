@@ -3,6 +3,7 @@ import React from "react";
 
 import chatsData from "../../data";
 import EachChat from "../../components/EachChat";
+import { FAB } from "react-native-elements/dist/buttons/FAB";
 
 const Chats = ({ navigation }) => {
     return (
@@ -10,8 +11,9 @@ const Chats = ({ navigation }) => {
             <FlatList
                 data={chatsData}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <EachChat navigation={navigation} profilePic={item.profilePic} name={item.name} mobileNo={item.mobileNo} lastMsgTime={item.lastMsgTime} lastMsgs={item.lastMsgs} />}
+                renderItem={({ item }) => <EachChat navigation={navigation} profilePic={item.profilePic} name={item.name} mobileNo={item.mobileNo} lastMsgTime={item.lastMsgTime} lastMsgs={item.lastMsgs} newMsg={item.newMsg} />}
             />
+            <FAB color="#248470" size='large' placement="right" icon={{ name: "message", color: "white" }} onPress={() => { navigation.navigate('SelectContact') }} />
         </View>
     );
 };
