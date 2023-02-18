@@ -2,8 +2,8 @@ const chatsData = [
   {
     id: "a",
     profilePic:
-      "https://cdn.statusqueen.com/dpimages/thumbnail/dp_images_8-1279.jpg",
-    name: "goBoi",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OjjKPFUFck0nTJJPiJHAgS99PllA1AqF0g&usqp=CAU",
+    name: "Yeren boi",
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
@@ -11,7 +11,8 @@ const chatsData = [
   },
   {
     id: "b",
-    profilePic: null,
+    profilePic:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFfWe--ofR8z_-jy8eopb7pLuWi4ywLgOng&usqp=CAU",
     name: null,
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
@@ -21,8 +22,8 @@ const chatsData = [
   {
     id: "c",
     profilePic:
-      "https://cdn.statusqueen.com/dpimages/thumbnail/dp_images_8-1279.jpg",
-    name: "goBoi",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYVms8NFyRNsMos0-8uyRRaedxM9FfCRLuiA&usqp=CAU",
+    name: "Ryuk",
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
@@ -31,7 +32,7 @@ const chatsData = [
   {
     id: "d",
     profilePic: null,
-    name: null,
+    name: "Pepe",
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
@@ -40,8 +41,8 @@ const chatsData = [
   {
     id: "e",
     profilePic:
-      "https://cdn.statusqueen.com/dpimages/thumbnail/dp_images_8-1279.jpg",
-    name: "goBoi",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgbuVMdyOnZBRqEVqupdOpnW9dS3f5UZhyw&usqp=CAU",
+    name: "Ramos",
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
@@ -49,9 +50,10 @@ const chatsData = [
   },
   {
     id: "f",
-    profilePic: null,
+    profilePic:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlOcRVkza7bsJrdHsAFBYTzg0abdUORMWMA&usqp=CAU",
     name: null,
-    mobileNo: "3334568790",
+    mobileNo: "8792889029",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
     newMsg: 0,
@@ -68,8 +70,9 @@ const chatsData = [
   },
   {
     id: "h",
-    profilePic: null,
-    name: null,
+    profilePic:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaYMZFKRrQgm6S_0AxPQ4lICHnl3ZblKtCvg&usqp=CAU",
+    name: "Brandon",
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
@@ -78,7 +81,7 @@ const chatsData = [
   {
     id: "i",
     profilePic:
-      "https://cdn.statusqueen.com/dpimages/thumbnail/dp_images_8-1279.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPF1QOWBPVlKSEkLTtgSD4xOYMi5R7nQzDQ&usqp=CAU",
     name: "goBoi",
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
@@ -88,7 +91,7 @@ const chatsData = [
   {
     id: "j",
     profilePic: null,
-    name: null,
+    name: "Pele",
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
@@ -97,8 +100,8 @@ const chatsData = [
   {
     id: "k",
     profilePic:
-      "https://cdn.statusqueen.com/dpimages/thumbnail/dp_images_8-1279.jpg",
-    name: "goBoi",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCfDoIIG8g29tcmHpWeEsv_6COHPR69JMfg&usqp=CAU",
+    name: "susune",
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
     lastMsgs: "Ok bro",
