@@ -2,6 +2,8 @@ import { FlatList, Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import statusData from "../../data/statusData";
 import MyStatus from "../../components/MyStatus";
+import { FAB } from "react-native-elements";
+import Ionicons from '@expo/vector-icons/Ionicons'
 
 const Status = () => {
     return (
@@ -30,6 +32,20 @@ const Status = () => {
                         </View>
                     </View>
                 )}
+            />
+            <FAB
+                color="#248470"
+                size="large"
+                placement="right"
+                icon={<Ionicons name="camera" color="white" size={25} />}
+            />
+            <FAB
+                color="#213439"
+                size="large"
+                placement="right"
+                style={{ top: "65%" }}
+                icon={{ name: "edit", color: "white" }}
+            // icon={<Ionicons name="camera" color="white" size={25} />}
             />
         </View>
     );
