@@ -11,7 +11,7 @@ const Chats = ({ navigation }) => {
             <FlatList
                 data={chatsData}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => (
+                renderItem={({ item, index }) => (
                     <EachChat
                         navigation={navigation}
                         profilePic={item.profilePic}
@@ -20,6 +20,7 @@ const Chats = ({ navigation }) => {
                         lastMsgTime={item.lastMsgTime}
                         lastMsgs={item.lastMsgs}
                         newMsg={item.newMsg}
+                        index={index}
                     />
                 )}
             />

@@ -1,5 +1,5 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 
 const EachChat = ({
     navigation,
@@ -9,11 +9,18 @@ const EachChat = ({
     lastMsgTime,
     lastMsgs,
     newMsg,
+    index
 }) => {
+
+    // const [myName, setmyName] = useState("")
+
+    console.log(name + index);
     return (
         <TouchableOpacity
             onPress={() => {
-                navigation.navigate("ChatScreen");
+                console.log('pressed' + name + index);
+                // setmyName[name]
+                navigation.navigate("ChatScreen", { name: name, navigation: navigation, profilePic: profilePic, mobileNo: mobileNo });
             }}
             style={styles.container}
         >
