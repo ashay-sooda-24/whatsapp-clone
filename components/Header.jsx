@@ -1,40 +1,42 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import Ionicons from '@expo/vector-icons/Ionicons'
-import { useState } from 'react'
-import { Modal } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { useState } from "react";
+import { Modal } from "react-native";
 
 const Header = ({ navigation }) => {
-
-    const [showDropdown, setShowDropdown] = useState(false)
+    const [showDropdown, setShowDropdown] = useState(false);
 
     return (
         <View style={styles.container}>
-            <View style={styles.logoContainer} >
+            <View style={styles.logoContainer}>
                 <Text style={styles.cusLogo}>Whatsapp</Text>
             </View>
             <View style={styles.leftContainer}>
-                <TouchableOpacity onPress={() => { navigation.navigate('CameraS') }}>
-                    <Ionicons name='camera-outline' color="#85959F" size={25} />
+                <TouchableOpacity
+                    onPress={() => {
+                        // navigation.navigate("CameraS");
+                    }}
+                >
+                    <Ionicons name="camera-outline" color="#85959F" size={25} />
                 </TouchableOpacity>
-                <TouchableOpacity >
-                    <Ionicons name='search-outline' color="#85959F" size={25} />
+                <TouchableOpacity>
+                    <Ionicons name="search-outline" color="#85959F" size={25} />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => setShowDropdown(true)}>
-                    <Ionicons name='ellipsis-vertical' color="#85959F" size={25} />
+                    <Ionicons name="ellipsis-vertical" color="#85959F" size={25} />
                 </TouchableOpacity>
             </View>
-
         </View>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
 
 const styles = StyleSheet.create({
     container: {
         // borderWidth: 2,
         // borderColor: "red",
-        display: 'flex',
+        display: "flex",
         flexDirection: "row",
         height: "8%",
         backgroundColor: "#1F2B30",
@@ -45,8 +47,8 @@ const styles = StyleSheet.create({
         // flex: 1
         width: "60%",
         justifyContent: "center",
-        alignItems: 'flex-start',
-        paddingLeft: "4%"
+        alignItems: "flex-start",
+        paddingLeft: "4%",
     },
     cusLogo: {
         // textAlign: "center"
@@ -60,6 +62,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
     },
-})
+});

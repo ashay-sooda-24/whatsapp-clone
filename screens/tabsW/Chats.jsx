@@ -30,7 +30,7 @@ const Chats = ({ navigation }) => {
                 placement="right"
                 icon={{ name: "message", color: "white" }}
                 onPress={() => {
-                    navigation.navigate("SelectContact");
+                    // navigation.navigate("SelectContact");
                 }}
             />
         </View>
