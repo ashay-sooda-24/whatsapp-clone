@@ -16,7 +16,7 @@ const chatsData = [
     name: null,
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
-    lastMsgs: "Ok bro",
+    lastMsgs: "Let's go",
     newMsg: 1,
   },
   {
@@ -26,7 +26,7 @@ const chatsData = [
     name: "Ryuk",
     mobileNo: "1234568790",
     lastMsgTime: "9:28pm",
-    lastMsgs: "Ok bro",
+    lastMsgs: "React",
     newMsg: 2,
   },
   {
@@ -35,7 +35,7 @@ const chatsData = [
     name: "Pepe",
     mobileNo: "3334568790",
     lastMsgTime: "9:28pm",
-    lastMsgs: "Ok bro",
+    lastMsgs: "Yeh",
     newMsg: 0,
   },
   {
@@ -55,7 +55,7 @@ const chatsData = [
     name: null,
     mobileNo: "8792889029",
     lastMsgTime: "9:28pm",
-    lastMsgs: "Ok bro",
+    lastMsgs: "Fight boi",
     newMsg: 0,
   },
   {
